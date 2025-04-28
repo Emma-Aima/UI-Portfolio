@@ -5,19 +5,200 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Page</title>
-    <link rel="stylesheet" href="about-styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="navbar-content">
+                    <!-- Logo -->
+                    <div class="logo-container">
+                        <img src="logo.png" alt="UI Portfolio Logo" class="logo-image"> 
+                        <h2>UI Portfolio</h2>
+                    </div>
+                    
+                    <!-- Desktop Menu -->
+                    <div class="desktop-menu">
+                        <a href="#" class="menu-link">Home</a>
+                        <a href="#" class="menu-link">About</a>
+                        <a href="#" class="menu-link">Services</a>
+                        
+                        <!-- Blog Dropdown -->
+                        <div class="dropdown-group">
+                            <button class="dropdown-button">
+                                Blog
+                                <svg class="dropdown-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#" class="dropdown-item">Latest Posts</a>
+                                <a href="#" class="dropdown-item">Categories</a>
+                                <a href="#" class="dropdown-item">Popular</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Pages Dropdown -->
+                        <div class="dropdown-group">
+                            <button class="dropdown-button">
+                                Pages
+                                <svg class="dropdown-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#" class="dropdown-item">Portfolio</a>
+                                <a href="#" class="dropdown-item">Testimonials</a>
+                                <a href="#" class="dropdown-item">Pricing</a>
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="menu-link">Contact</a>
+                    </div>
+                    
+                    <!-- Right Side Items -->
+                    <!-- Hire Me Button -->
+                    <button class="hire-button">
+                        Hire Me
+                    </button>
+
+                    <div class="navbar-right">
+                        <!-- Search Icon -->
+                        <button id="search-btn" class="icon-button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        
+                        <!-- Theme Toggle -->
+                        <button id="theme-toggle" class="icon-button">
+                            <i class="fas fa-moon dark-icon"></i>
+                            <i class="fas fa-sun light-icon"></i>
+                        </button>
+    
+                        <!-- Mobile menu button -->
+                        <button id="mobile-menu-button" class="mobile-menu-button">
+                            <svg class="mobile-menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu">
+                <div class="mobile-menu-content">
+                    <a href="#" class="mobile-menu-link">Home</a>
+                    <a href="#" class="mobile-menu-link">About</a>
+                    <a href="#" class="mobile-menu-link">Services</a>
+                    
+                    <!-- Blog Dropdown Mobile -->
+                    <div class="mobile-dropdown">
+                        <button id="blog-dropdown-btn" class="mobile-dropdown-button">
+                            Blog
+                            <svg class="mobile-dropdown-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="blog-dropdown" class="mobile-dropdown-content">
+                            <a href="#" class="mobile-dropdown-item">Latest Posts</a>
+                            <a href="#" class="mobile-dropdown-item">Categories</a>
+                            <a href="#" class="mobile-dropdown-item">Popular</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Pages Dropdown Mobile -->
+                    <div class="mobile-dropdown">
+                        <button id="pages-dropdown-btn" class="mobile-dropdown-button">
+                            Pages
+                            <svg class="mobile-dropdown-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="pages-dropdown" class="mobile-dropdown-content">
+                            <a href="#" class="mobile-dropdown-item">Portfolio</a>
+                            <a href="#" class="mobile-dropdown-item">Testimonials</a>
+                            <a href="#" class="mobile-dropdown-item">Pricing</a>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="mobile-menu-link">Contact</a>
+                    <button class="mobile-hire-button">
+                        Hire Me
+                    </button>
+                </div>
+            </div>
+        </nav>
+    
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <!-- Background image is set in CSS -->
+        </div>
+    
+        <!-- Search Modal -->
+        <div id="search-modal" class="search-modal">
+            <div class="search-modal-content">
+                <div class="search-modal-header">
+                    <h3>Search</h3>
+                    <button id="close-search" class="close-search-button">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="search-input-container">
+                    <input type="text" placeholder="Search..." class="search-input">
+                    <button class="search-submit-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <script src="script.js"></script>
+
+    <div class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Hi, I'm John Watson</h1>
+                <p>I specialize in Software Engieering and Graphics Design, and I'm dedicated and committed
+                    about creating awesome portfolio work that would attract the right network to your page. I
+                    always aim to impress audiences with my creativity. Call me for innovative solutions 
+                    and let's bring your ideas to life.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#hire" class="btn btn-primary">Hire Me</a>
+                    <a href="#portfolio" class="btn btn-secondary">My Portfolio</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Actual image path from downloaded Images -->
+                <img src="person.png" alt="John Watson - Software Engineer">
+            </div>
+        </section>
+    </div>
+
+<body></body>
 
     <section class="about-section">
         <div class="about-content">
-            <img src="pexels-mikhail-nilov-6981087.jpg" alt="Portfolio Work">
+            <img src="skill-bg.jpg" alt="Portfolio Work">
             <div class="skills">
                 <h2>About Me</h2>
                 <p>I specialize in Branding and Strategy, and I'm passionate about creating awesome portfolio work. I
-                    always aim to impress audiences with my creativity.</p>
+                    always aim to impress audiences with my creativity.
+                </p>
+                <p>I am a passionate and dedicated Software Engineer with a deep love for creating 
+                    innovative solutions to complex problems. I admire Graphics Design for its unique 
+                    ability to craft visually stunning experiences that communicate ideas effectively 
+                    and beautifully. My goal is to merge technical expertise with creative design to 
+                    deliver impactful and user-friendly applications.
+                </p>
+                <br>
                 <div class="skill">
                     <span>UI/UX Design</span>
                     <div class="bar">
@@ -42,40 +223,112 @@
                         <div class="fill" style="width: 75%;"></div>
                     </div>
                 </div>
+                div class="social-links">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+            
+            <div class="buttons">
+                <a href="#contact" class="btn btn-primary">Hire Me</a>
+                <a href="#" class="btn btn-secondary">Download CV</a>
+            </div>
             </div>
         </div>
     </section>
+
+    <!-- What I Do for You Section  -->
+    <section class="services-section">
+        <div class="container">
+          <h2 class="section-title">What I Do for You</h2>
+          <div class="services-grid">
+            <!-- Card 1: Design -->
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-pencil-ruler"></i>
+              </div>
+              <h3 class="service-title">UI/UX Design</h3>
+              <p class="service-description">
+                I create intuitive and visually appealing user interfaces tailored
+                to your brand, ensuring seamless user experiences across all
+                devices.
+              </p>
+            </div>
+            <!-- Card 2: Development -->
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3 class="service-title">Web Development</h3>
+              <p class="service-description">
+                From front-end to back-end, I build responsive, high-performance
+                websites using modern technologies like React, Node.js, and more.
+              </p>
+            </div>
+            <!-- Card 3: Branding -->
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-palette"></i>
+              </div>
+              <h3 class="service-title">Brand Identity</h3>
+              <p class="service-description">
+                I craft unique brand identities, including logos, color palettes,
+                and style guides, to help your business stand out.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
     <section class="services-section">
         <div class="services-content">
             <div class="services-grid">
                 <div class="service">
                     <h4>Web Development</h4>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Web development is the art and science of creating dynamic, responsive, and user-friendly websites. 
+                        It combines creativity with technical expertise to build digital experiences that engage users and 
+                        solve real-world problems.
+                    </p>
                 </div>
                 <div class="service">
                     <h4>Design Trends</h4>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Design trends are constantly evolving, reflecting the dynamic nature of creativity and innovation. 
+                        From minimalistic aesthetics to bold typography, staying updated with the latest trends ensures 
+                        your designs remain fresh and engaging. 
+                    </p>
                 </div>
                 <div class="service">
-                    <h4>Research & Analysis</h4>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <h4>Graphics Design</h4>
+                    <p>Graphics design is the art of visual storytelling, where creativity meets technology to craft 
+                        compelling and impactful visuals. It transforms ideas into stunning designs that communicate 
+                        messages effectively, leaving a lasting impression. 
+                    </p>
                 </div>
                 <div class="service">
                     <h4>Customer Support</h4>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Customer support is the backbone of any successful business, ensuring that clients feel heard, 
+                        valued, and supported. It's about building trust, solving problems efficiently, and creating 
+                        lasting relationships. 
+                    </p>
                 </div>
                 <div class="service">
                     <h4>Responsive Design</h4>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Responsive design ensures that your website looks and functions perfectly on any device, from 
+                        desktops to smartphones. It's about creating seamless user experiences by adapting layouts, images, 
+                        and content dynamically to fit different screen sizes. 
+                    </p>
                 </div>
                 <div class="service">
                     <h4>PSD Design</h4>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>PSD design involves creating visually appealing and detailed designs using Adobe Photoshop. 
+                        It serves as a blueprint for web developers, providing a clear visual representation of the 
+                        final product. From wireframes to high-fidelity mockups, PSD design ensures precision and 
+                        creativity in every project.
+                    </p>
                 </div>
             </div>
             <div class="profile-image">
-                <img src="pexels-italo-melo-881954-2379005.jpg" alt="Profile Picture">
+                <img src="person.png" alt="Profile Picture">
             </div>
         </div>
     </section>
@@ -101,6 +354,8 @@
         </div>
     </section>
     <section>
+        
+        /* My Success Work Section */
         <div id="portfolio" class="portfolio-section">
             <div class="">
                 <h2 class="section-title">My Success Work</h2>
