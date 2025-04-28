@@ -194,7 +194,7 @@ Unsplash for placeholder images (replace with your own)
 Tailwind CSS for utility classes (optional)
 
 TEAM MEMBERS 
-1. SAM NJIHLA
+1. SAMUEL NJIHIA 
 2. DANIEL OHACHOR
 3. JUWON ADEOSUN
 4. EMMANUELLA AIMALOHI ILEOGBEN
